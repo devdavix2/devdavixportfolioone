@@ -128,7 +128,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl text-gray-300 mb-8"
           >
-            Front-End Developer & Graphic Designer
+            Full Stack Developer & Graphic Designer
           </motion.p>
 
           <motion.div
