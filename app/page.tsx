@@ -128,7 +128,8 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl text-gray-300 mb-8"
           >
-            Front-End Developer & Graphic Designer , Animator 
+            Front-End Developer & Graphic Designer
+          </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -455,78 +456,77 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
       <section id="contact" ref={contactRef} className="w-full py-20 px-4 md:px-8">
-        <div className="max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl font-bold mb-2">Get In Touch</h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-cyan-500 to-purple-600 mx-auto mb-6"></div>
-            <p className="text-gray-400 max-w-2xl mx-auto">
-              Have a project in mind or want to collaborate? Feel free to reach out!
-            </p>
-          </motion.div>
+    <div className="max-w-7xl mx-auto">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="text-center mb-16"
+      >
+        <h2 className="text-3xl font-bold mb-2">Get In Touch</h2>
+        <div className="w-20 h-1 bg-gradient-to-r from-cyan-500 to-purple-600 mx-auto mb-6"></div>
+        <p className="text-gray-400 max-w-2xl mx-auto">
+          Have a project in mind or want to collaborate? Feel free to reach out!
+        </p>
+      </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-            >
-              <div className="bg-gradient-to-br from-gray-900 to-black p-8 rounded-lg border border-gray-800 h-full">
-                <h3 className="text-2xl font-semibold mb-6 text-white">Contact Information</h3>
-                <div className="space-y-6">
-                  <div className="flex items-start">
-                    <div className="bg-gray-800 p-3 rounded-full mr-4">
-                      <Mail className="h-6 w-6 text-cyan-400" />
-                    </div>
-                    <div>
-                      <p className="text-sm text-gray-400 mb-1">Email</p>
-                      <p className="text-gray-200">devdavixx@gmail.com</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="bg-gray-800 p-3 rounded-full mr-4">
-                      <Twitter className="h-6 w-6 text-purple-400" />
-                    </div>
-                    <div>
-                      <p className="text-sm text-gray-400 mb-1">Twitter</p>
-                      <p className="text-gray-200">@devdavix</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <div className="bg-gray-800 p-3 rounded-full mr-4">
-                      <Github className="h-6 w-6 text-pink-400" />
-                    </div>
-                    <div>
-                      <p className="text-sm text-gray-400 mb-1">GitHub</p>
-                      <p className="text-gray-200">github.com/devdavix2</p>
-                    </div>
-                  </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <div className="bg-gradient-to-br from-gray-900 to-black p-8 rounded-lg border border-gray-800 h-full">
+            <h3 className="text-2xl font-semibold mb-6 text-white">Contact Information</h3>
+            <div className="space-y-6">
+              <a href="mailto:devdavixx@gmail.com" className="flex items-start hover:opacity-90">
+                <div className="bg-gray-800 p-3 rounded-full mr-4">
+                  <Mail className="h-6 w-6 text-cyan-400" />
                 </div>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-            >
-              <div className="bg-gradient-to-br from-gray-900 to-black p-8 rounded-lg border border-gray-800">
-                <h3 className="text-2xl font-semibold mb-6 text-white">Send a Message</h3>
-                <ContactForm />
-              </div>
-            </motion.div>
+                <div>
+                  <p className="text-sm text-gray-400 mb-1">Email</p>
+                  <p className="text-gray-200">devdavixx@gmail.com</p>
+                </div>
+              </a>
+              <a href="https://twitter.com/devdavix" target="_blank" rel="noopener noreferrer" className="flex items-start hover:opacity-90">
+                <div className="bg-gray-800 p-3 rounded-full mr-4">
+                  <Twitter className="h-6 w-6 text-purple-400" />
+                </div>
+                <div>
+                  <p className="text-sm text-gray-400 mb-1">Twitter</p>
+                  <p className="text-gray-200">@devdavix</p>
+                </div>
+              </a>
+              <a href="https://github.com/devdavix2" target="_blank" rel="noopener noreferrer" className="flex items-start hover:opacity-90">
+                <div className="bg-gray-800 p-3 rounded-full mr-4">
+                  <Github className="h-6 w-6 text-pink-400" />
+                </div>
+                <div>
+                  <p className="text-sm text-gray-400 mb-1">GitHub</p>
+                  <p className="text-gray-200">github.com/devdavix2</p>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <div className="bg-gradient-to-br from-gray-900 to-black p-8 rounded-lg border border-gray-800">
+            <h3 className="text-2xl font-semibold mb-6 text-white">Send a Message</h3>
+            <ContactForm />
+          </div>
+        </motion.div>
+      </div>
+    </div>
+  </section>
 
       {/* Footer */}
       <footer className="w-full py-8 px-4 md:px-8 border-t border-gray-800">
