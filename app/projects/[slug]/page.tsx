@@ -119,44 +119,32 @@ const projects = {
     ],
   },
   "social-media-design": {
-    title: "Social Media Design",
-    description: "Creative social media designs for various brands including CANINO Foods and exchange platforms.",
+    title: "Social Media Design for CANINO FOODS",
+    description: "Creative social media designs for various brands including CANINO Foods.",
     fullDescription: `
-      This project involved creating engaging social media designs for multiple clients across different industries. The designs were created to increase brand visibility, engagement, and conversion rates on various social media platforms.
+      This project involved creating engaging social media designs for Canino Foods. The designs were created to increase brand visibility, engagement, and conversion rates on various social media platforms.
       
-      The work included:
-      
-      1. CANINO Foods:
       - Product showcase designs for their health food products
       - Consistent gold/yellow branding across all posts
       - Clear product information and benefits highlighted
       - Contact information and call-to-action elements
       
-      2. Boss Baby Exchange:
-      - Cryptocurrency and gift card exchange service promotion
-      - Bold, attention-grabbing designs with red and blue color schemes
-      - Clear service offerings and competitive advantages
-      - Coming soon announcements and service launch materials
-      
-      3. DareyMarts Exchange:
-      - Financial services and currency exchange promotional materials
-      - Consistent branding with orange color scheme
-      - Service listing and benefits highlighted
-      - Contact information and trust-building elements
-      
-      All designs were created with mobile-first viewing in mind, optimized for Instagram, Facebook, and other social platforms, and included QR codes for easy access to services.
-    `,
+      `,
     image: "/images/social-media-canino.png",
     category: "design",
     tags: ["Social Media", "Digital Marketing", "Photoshop", "Illustrator"],
-    client: "Various Clients",
-    completedDate: "2022-2023",
+    client: "Canino Foods",
+    completedDate: "2023",
     liveSite: null,
     repository: null,
     galleryImages: [
-      "/images/social-media-canino.png",
-      "/images/social-media-bossbaby.png",
-      "/images/social-media-dareymarts.png",
+      "/images/social-media-canino1.jpg",
+      "/images/social-media-canino2.jpg",
+      "/images/social-media-canino3.jpg",
+      "/images/social-media-canino4.png",
+      "/images/social-media-canino5.png",
+      "/images/social-media-canino6.png",
+      
     ],
   },
   "logo-design": {
@@ -289,11 +277,11 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
   }
 
   return (
-    <main className="min-h-screen bg-black text-white">
+    <main className="min-h-screen px-12 bg-black text-white">
       <div className="max-w-7xl mx-auto px-4 py-12 md:py-20">
         <div className="mb-8">
           <Button variant="outline" asChild className="mb-8">
-            <Link href="/#work" className="flex items-center">
+            <Link href="/projects" className="flex items-center">
               <ArrowLeft className="mr-2 h-4 w-4" /> Back to Projects
             </Link>
           </Button>

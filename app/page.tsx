@@ -83,8 +83,9 @@ export default function Home() {
   }, [])
 
   return (
-    <main className="flex min-h-screen flex-col items-center bg-black text-white">
+    <main className="flex min-h-screen overflow-x-hidden px-8 flex-col items-center bg-black text-white">
       {/* Hero Section */}
+    
       <section
         ref={targetRef}
         className="relative w-full h-screen flex flex-col items-center justify-center overflow-hidden"
@@ -128,7 +129,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl text-gray-300 mb-8"
           >
-            Front-End Developer & Graphic Designer
+            Front-End Developer & Graphic Designer,App Developer 
           </motion.p>
 
           <motion.div
@@ -377,7 +378,7 @@ export default function Home() {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <ProjectCard
-                title="Brand Identity"
+                title="Brand Identity For D'KING EVENTS AND SURPRISE"
                 description="Complete brand identity design for D'KING EVENTS AND SURPRISE, an event planning company."
                 tags={["Branding", "Logo Design", "Typography", "Color Theory"]}
                 image="/images/dking-brand-guidelines.png"
@@ -385,7 +386,7 @@ export default function Home() {
                 slug="brand-identity"
               />
               <ProjectCard
-                title="Social Media Design"
+                title="Social Media Design for CANINO foods "
                 description="Creative social media designs for various brands including CANINO Foods and exchange platforms."
                 tags={["Social Media", "Digital Marketing", "Photoshop", "Illustrator"]}
                 image="/images/social-media-canino.png"
@@ -403,6 +404,18 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="flex flex-wrap gap-4 mt-4 justify-center">
+
+        <Button
+                  className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white"
+          >
+            <Link  href="/projects">
+            View All Projects
+
+            </Link>
+          </Button>
+          </div>
+
       </section>
 
       {/* Collaboration Section */}
@@ -569,3 +582,4 @@ export default function Home() {
     </main>
   )
 }
+
